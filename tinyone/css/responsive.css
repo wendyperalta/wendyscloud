@@ -1,0 +1,64 @@
+/* if screen size is SMALLER than ___px*/
+@media screen and (max-width: 480px){
+  h1, h2, .keep-in-touch h2{
+    font-size: 1.5em;
+  } 
+  
+  span{
+    font-size:0.8em;
+  }
+  
+  img.menu, .ipad{
+    display:none;
+  }
+  
+  .logo{
+    float:left;
+    width:30%;
+  }
+  
+  .social-media{
+    width:40%;
+  }
+
+  .social-media ul li {
+    padding-left: 5%;
+  }
+  
+  .main-header, .feat-description{
+    width:100%;
+  }
+  
+  .main-header p, .feat-description, .keep-in-touch p{
+    font-size:0.8em;
+  }
+  
+  .systems img{
+    width:15%;
+  }
+    
+  .feature-block{
+    margin:5% 0;
+  }
+  
+  .feature-block h3{
+    font-size:1em;
+    padding:0;
+  }
+  
+  .block1, .block2{
+    width:90%;
+    padding:0;
+    float:left;
+  }
+  
+  .keep-in-touch{
+    width:100%;
+  }
+  
+}
+
+/*large tablets and normal sized desktops*/
+@media screen and (min-width:660px){
+  
+}

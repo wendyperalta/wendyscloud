@@ -1,0 +1,249 @@
+/******************GENERAL********************/
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font: 1em 'Helvetica', sans-serif;
+}
+
+header { 
+  height: 585px;
+  background: url(../img/header.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+/*  width: 74.342%;
+  margin: 0 auto;*/
+}
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+img#header-img {
+  width: 100%;
+}
+
+.full{
+  width:949px;
+  margin: 0 auto;
+}
+
+a, a:visited{
+  text-decoration:none;
+}
+
+.two-col{
+  width:50%;
+  display:inline-block;
+  text-align: left;
+}
+
+#left-arrow, #right-arrow{
+  display:inline-block;
+  opacity:0.5;
+  vertical-align: top;
+  margin-top: 8%;
+  -webkit-transition: opacity 0.5s ease; /*Hover off*/
+}
+
+button{
+  background-color: #f12078;
+  color: #fff;
+  border: 1px solid #f12078;
+  padding: 20px 25px;
+}
+
+/******************HEADER********************/
+div#hand {
+  padding-top: 8.1669%;
+  padding-right: 4%;
+}
+
+div#header-info {
+  width: 45%;
+  vertical-align: top;
+  padding-top: 18.8747%;
+}
+
+#logo, div#slogan{
+  padding-bottom: 8.2929%;
+}
+
+div#slogan {
+  color: white;
+  font: lighter 1.5em 'Helvetica', sans-serif;
+  text-shadow: 1px 1px 1px #000;
+  line-height: 30px;
+}
+
+#header button {
+  font-size: 1.125em;
+  -webkit-box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.47);
+  -moz-box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.47);
+  box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.47);
+}
+
+/******************SLIDER********************/
+/*flips left arrow*/
+div#left-arrow a img:first-child{
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+#slider {
+  width: 90%;
+  margin: -3% 10% 1.2%;
+}
+
+/*****DRY DRY DRY DRY DRY FOR THE HOVERS!!!!!*****/
+
+#left-arrow:hover, #right-arrow:hover{
+  opacity:1;
+  -webkit-transition: opacity 0.5s ease; /*Hover on*/
+  transition: opacity 0.5s ease; 
+}
+
+#blocks {
+  display: inline-block;
+  width: 87%;
+  text-align: center;
+}
+
+.block{
+  display:inline-block;
+  text-align: left;
+  width:17%;
+  margin: 0 1.5%;
+  padding:2%;
+  font-weight:lighter;
+  background-color:rgb(255, 255, 255);
+  /*opacity:0.5;*/
+  /*-webkit-transition: opacity 0.5s ease; /*hover off*/*/
+
+  -webkit-box-shadow: -1px -1px 12px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px -1px 12px -1px rgba(0,0,0,0.75);
+  box-shadow: -1px -1px 12px -1px rgba(0,0,0,0.75);
+}
+
+/*.block:hover{
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease; /*hover on
+}*/
+
+.block h3 {
+  padding: 5.5% 0;
+  margin-bottom: 5.5%;
+  border-bottom: 2px solid #f12078;
+}
+
+.block span {
+  font-size: 0.75em;
+}
+
+/*div#blocks div:first-child{
+  opacity:1;
+  -webkit-transition: opacity 0.5s ease; /*hover off
+
+  /*Must turn opacity 0.5 when not active
+}*/
+
+/******************SLIDER********************/
+#download{
+  margin: 2.4% 0 3.4%;
+}
+
+#download p{
+  text-align: center;
+  font-size:1.5em;
+  font-weight: lighter;
+}
+
+#download button{
+  font-size:1em;
+  padding: 10px 25px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+#download img {
+  vertical-align: middle;
+}
+
+#main-content{
+  margin: 3.4% 0 2.3%;
+  border-bottom: 2px solid black;
+}
+
+#features{
+  width:48.261%;
+  display: inline-block;
+  margin-right: 3.8%;
+}
+
+#features h2{
+  font-size:1.5em;
+  font-weight: lighter;
+  margin-bottom: 3.1%;
+}
+
+#features p{
+  margin-top:3.1%;
+  font-size: 0.875em;
+  line-height: 20px;
+  font-weight: lighter;
+}
+
+.feature{
+  margin-bottom:7.5%;
+}
+
+div#iphones {
+  width: 43%;
+  display: inline-block;
+  text-align: right;
+  margin-left: 3.8%;
+}
+
+
+
+/******************FOOTER********************/
+footer span{
+  font-size:0.75em;
+  font-weight: lighter;
+}
+
+footer a{
+  color: #f12078;
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
+
+#created-by{
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+/*@media screen and (max-width: 480px) {
+  #slogan{
+    font-size: 1em;
+  }
+
+}*/

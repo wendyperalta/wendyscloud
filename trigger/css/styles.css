@@ -1,0 +1,569 @@
+/*******************GENERAL************************/
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.default{
+	width:90%;
+	margin:0 auto;
+}
+ 
+a, a:visited{
+ 	text-decoration: none;
+}
+
+#carousel-description p, #about-content p, #product-description p, #job-description p{
+  font-family: Arial, Helvetica,sans-serif; 
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  background-color: #ff5a00;
+  border: 0;
+  font-size: 1.125em;
+  color: #fff;
+  padding: 13px 32px;
+  width: 194px;
+}
+
+.service, #product-title, #job-title{
+  font-size:1.5em;
+  font-weight:lighter;
+}
+
+.col-3 {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.hidden{
+     opacity:0;
+}
+
+.visible{
+     opacity:1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#navigation #dropdown.show{
+  display:block;
+}
+
+.animated {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+/*******************NAV**************************/
+#navigation{
+	padding: 1.8% 0;
+	font-size: 1.125em;
+	color:#4b4b4b;
+  width:100%;
+  top:0;
+  background-color:#fff;
+  position:fixed;
+  z-index: 1;
+}
+#menu{
+  display: table-cell;
+  width:10%;
+  text-align:right;
+}
+
+#menu img{
+  width:25px;
+}
+
+#navigation .default {
+  display: table;
+}
+
+#nav-list, #nav-list ul li, #trigger-logo{
+	display: inline-block;
+}
+
+#nav-list{
+	display:table-cell;
+	vertical-align: middle;
+	text-align: right;
+}
+
+#nav-list ul li{
+  padding: 0 4%;
+  border-right: 2px solid #4b4b4b;
+}
+#nav-list ul li:last-child {
+  padding-right: 0;
+  border:none;
+}
+
+#nav-list ul li a, #dropdown ul li a{
+	-webkit-transition: color 0.2s ease;
+          transition: color 0.2s ease;
+	color:#4b4b4b;
+}
+
+#nav-list ul li a:hover, #nav-list ul li a.active, #dropdown ul li a:hover, #dropdown ul li a.active{
+	-webkit-transition: color 0.2s ease;
+          transition: color 0.2s ease;
+	color:#faa635;
+}
+
+#navigation #dropdown {
+  margin-top: 2%;
+  border-top:1px solid #4b4b4b;
+  display:none;
+}
+
+#dropdown li {
+  margin-bottom: 2%;
+}
+
+#dropdown li:last-child{
+  margin:0;
+}
+
+#dropdown ul {
+  margin-top: 2%;
+}
+/*******************HEADER/CAROUSEL***********************/
+header {
+  margin-top: 5.8%; /*prevents carousel image to cut off*/
+}
+
+.bx-wrapper .carousel img{
+  width:100%;
+}
+
+.bx-wrapper .bx-viewport {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  left:0;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a{
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;  
+  width:100%;
+  margin:0;
+  height: auto;
+  background: #4b4b4b;
+}
+
+/*.bx-wrapper .bx-pager */
+.bx-pager-item{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+    display: flex;
+  border-right: solid 2px #23272a;
+  width: 20%;  /*Needed for border none to dissapear*/
+}
+
+.bx-pager-item:last-child {
+  border: none; 
+}
+
+.bx-wrapper .bx-pager{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+    display: flex;
+    padding-top: 0;
+    bottom: 0;
+    position: relative;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active{
+  -webkit-transition: background 0.5s ease;
+          transition: background 0.5s ease;
+  background:#ff5a00;
+}
+
+.bx-wrapper{
+  margin:0 auto;
+}
+
+.carousel .title span{
+  font-size: 2.25em;
+  font-weight: lighter;
+  color:#fff;  
+}
+
+.carousel-content {
+  position: absolute;
+  bottom: 0;
+  background: rgba(13, 13, 13, 0.74);   /*transparent bkgnd*/
+  padding:2.5% 0;
+  width: 100%;
+}
+
+#carousel-description p, #about-content p{
+  font-size:0.875em;
+  color:#878787;
+}
+
+div#carousel-description p {
+  width: 75%;
+}
+
+.title {
+  padding-bottom:1.9%;
+}
+
+/*******************ABOUT**************************/
+section#about{
+  background-color: #000;
+  color:#fff;
+  text-align: center;
+  padding: 11.6% 0;
+}
+
+#about-content h1{
+  font-size: 3em;
+  font-weight: lighter;
+  padding-bottom: 2.66%;
+}
+
+#about-content p {
+  max-width: 695px;
+  margin: 0 auto;
+}
+
+
+/*******************SERVICES**********************/
+#services{
+  background:url(../img/services_background.jpg) no-repeat;
+  background-size: 100% 100%;
+  /*min-height:519px;*/
+}
+
+#services-content{
+  text-align: center;
+  color: #fff;
+  padding: 3.55% 0 2.85%;
+}
+
+#services-content .col-3 img {
+  opacity: 0.5;
+}
+
+.fpo{
+  font-size:2em;
+  opacity:0.6;
+}
+
+.service_icon{
+  margin:13px 0 22px;   /*meant to be fixed*/
+}
+
+#qualcomm{
+  margin: 6% 0;
+  font-size:2em;
+  font-weight: lighter;
+}
+
+#qualcomm img{
+  margin:0 15px;
+  vertical-align: middle;
+}
+
+#big-fpo{
+  font-size:4.5em;
+  opacity:0.6;
+  text-align: right;
+  margin-top:5px;
+}
+
+/*********************CLIENTS********************/
+section#clients{
+  background-color: #000;
+  text-align: center;
+}
+
+div#clients-content {
+  padding: 8.44% 0;
+}
+
+div#client-list {
+  margin-bottom: 4.62%;
+}
+
+.client {
+  width: 100%;       /*all in one line*/
+  display: inline-block;
+}
+
+.col-2{
+  width:469px;
+  margin: 2% 0;
+  display: inline-block;
+}
+
+.client img {
+  display: inline-block;
+  padding: 0 4%;
+}
+
+.col-2:first-child img {
+  padding: 0 8%;
+}
+
+#clients-content .bx-wrapper .bx-viewport {
+  background-color: #000;
+}
+
+#clients-content .button {
+  margin-top: 6.2%;
+}
+/*****************WORK***********************/
+section#work {
+  color: #fff;
+  background: url(../img/work_background.jpg);
+  background-size: 100% 100%;
+}
+
+div#work-content {
+  text-align: center;
+  padding: 5.5% 0;
+}
+
+#product-title{
+  margin: 1.6% 0;
+  width: 267px;  /*Do not want it to resize*/
+}
+
+#product-info, #job-location{
+  font:italic 0.875em 'Libre Baskerville', serif;
+}
+
+#product-description, #job-description{
+  margin:8.4% 0;
+  width: 283px;   /*Do not want it to resize*/
+  font-size: 0.75em;
+  color:#878787;
+}
+
+#work-content a, #careers-content a{
+  display: block;
+  color:#ff5a00;
+  margin:8% 0;
+}
+
+#work-content .col-3, #jobs .col-3{
+  text-align: left;
+}
+
+.address {
+  font-size: 1.125em;
+  font-weight: lighter;
+}
+
+span.gc-cs-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+/********************CAREERS*******************/
+section#careers {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+div#careers-content {
+  padding:6% 0 8%;
+}
+
+#careers-content h2 {
+  font-size: 2em;
+  font-weight: lighter;
+  margin-bottom: 6%;
+}
+
+#job-description{
+  width: 287px;
+}
+
+div#job-location {
+  margin-top: 2%;
+}
+
+#careers-content a{
+  margin:0;
+}
+
+/****************FOOTER*******************/
+div#social {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+#social div {
+  display: inline-block;
+  padding: 0 4.4%;
+  vertical-align: middle;
+}
+
+div#footer-content {
+  padding: 5.5% 0;
+}
+
+div#locations {
+  text-align: center;
+}
+
+.location {
+  background: url(../img/losangeles.jpg) no-repeat;
+  width: 486px;
+  height: 161px;
+  display:inline-block;
+  color: #fff;
+  margin-bottom:3%;
+}
+
+.location:nth-of-type(2) {
+  background: url(../img/shangai.jpg) no-repeat;
+}
+
+.location h3 {
+  font-size: 2.25em;
+  font-weight: lighter;
+  margin-bottom: 8%;
+}
+
+.location-container {
+  text-align: right;
+  padding: 5.8% 3.9% 0 0;
+  width:75%;
+}
+
+.location span.fpo {
+  opacity: 0.3;
+}
+
+.fpo-container, .location-container {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.fpo-container {
+  width:20%;
+  text-align: left;
+  padding-top: 2.5%;
+}
+/***********************MEDIA********************/
+/*ensures content is displayed in very small screens*/
+@media screen and (max-width: 292px) {
+  #product-description, #product-title, #job-description{
+    width:100%;  
+  }
+
+  #work-content .col-3 img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:550px){
+  .location{
+    width:100%;
+  }
+}
+
+/*Hides extended navigation list*/
+@media screen and (max-width:590px){
+    #nav-list{
+      display:none;
+    }
+}
+
+/*hides hamburger icon*/
+@media screen and (min-width:591px){
+    #menu, #dropdown{
+      display:none !important;
+    }
+}
+
+@media screen and (max-width: 516px) {
+    .col-2{
+      width:45%;
+    }
+    .client img{
+      margin: 4% 0;
+    }
+
+}
+
+/*lower font-size for carousel content on smaller screens*/
+@media screen and (max-width:662px){
+  #carousel-description p{
+    font-size: 0.5em;
+  }
+  .carousel .title span {
+    font-size: 1.25em;
+  }
+
+}
+
+@media screen and (max-width: 775px) {
+  /*lower font-size*/
+  #about-content h1{
+    font-size: 2em;
+  }
+
+  /*Will show more words per line at 95% width*/
+  #about-content p {
+    width: 95%;
+  }
+
+}
+
+@media screen and (max-width:1034px){
+  /*displays one per line*/
+  .col-3{
+    width:90%;
+    padding: 2.8% 0;
+  }
+}
+
+@media screen and (min-width:1035px){
+  /*Displays one per line and gives space in between*/
+  .col-3{       
+    width:33%;
+    padding: 2.8% 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

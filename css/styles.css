@@ -1,0 +1,433 @@
+/******************GENERAL********************/
+*{
+  box-sizing: border-box;
+}
+
+body, label{
+	font-family:'Montserrat', sans-serif;
+}
+
+label {
+  top: 8px !important;
+}
+
+.active{
+	background: #4e125b;
+	padding: 6px 15px;
+}
+
+a{
+	color: #fff;
+	text-decoration: none;
+}
+
+input,textarea {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
+.default{
+	width:95%;
+	margin: 0 auto;
+}
+
+#portfolio, #about, #contact, #footer-content{
+	padding: 10% 0;
+	text-align: center;
+}
+
+#header-content{
+	text-align: center;
+	color:white;
+	padding:140px 0;
+}
+
+#portfolio h2, #about h2 , #contact h2{
+	font-size: 2.812em;
+	font-weight: bold;
+	color: #18bc9c;
+}
+
+#footer-content, .fa-bars, header .fa-cloud, header .fa-circle, #about, #about h2, #about .fa-cloud, #about .fa-circle{
+	color:#fff;
+}
+
+#nav-content, #footer-content{
+	background-color: #7D278F;	
+} 
+
+#header-content, #about, #copyright{
+	background-color: #B538CF;
+}
+
+#title p, #description p{
+	font-family: 'Lato', sans-serif;
+}
+
+input:focus, textarea:focus {
+    outline-width: 0;
+}
+/******************NAV********************/
+#nav-content{
+	padding:2% 0;
+	position:fixed;
+    top:0;
+    width:100%;
+    z-index:100;
+}
+
+/*nav li a, #dropwdown ul li a {
+  padding: 10px 15px;
+}*/
+
+#logo{
+	display:table-cell;
+	vertical-align: middle;
+}
+
+header #nav-content nav{
+	display:table;
+	width:100%;
+}
+
+#extended-nav li a:hover, #dropdown li a:hover{
+	color:#18bc9c;
+}
+
+#hamburger-icon{
+	text-align: right;
+}
+
+#hamburger-icon, #extended-nav{
+	display:table-cell;
+	vertical-align: middle;
+}
+
+#extended-nav{
+  	font-weight: bold;
+  	text-align: right;
+}
+
+#extended-nav ul li{
+	display:inline-block;
+	padding: 0 2%;
+}
+
+#extended-nav ul li:last-child {
+  padding-right: 0;
+}
+
+#dropdown{
+	border-top:1px solid #785580;
+	margin-top: 2%;
+}
+
+#dropdown ul li a {
+  font-weight: bold;
+}
+
+#dropdown ul li{
+	padding:10px;
+}
+
+#dropdown ul li:last-child{
+	padding-bottom: 0;
+}
+/******************HEADER********************/
+
+#bar-container{
+	display:inline-block;
+}
+
+.fa-bars{
+	padding: 10px 15px;
+	border: 1px solid black;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.fa-bars:hover{
+	background-color: #4E0D63;
+}
+
+#headshot{
+	padding:5% 0 5%;
+	display:inline-block;
+}
+
+#circle{
+	width: 350px;
+	height:350px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	background: url(../img/cut_500.jpg) no-repeat 62%;
+	background-size: 124%;
+	-moz-box-shadow: inset 0 0 50px #000000;
+  	-webkit-box-shadow: inset 0 0 50px #000000;
+  	box-shadow: inset 0 0 50px #000000;
+}
+
+#circle:hover{
+
+}
+
+#header-content h1{
+	font-size: 1.875em;
+	font-weight: bold;
+}
+
+.divider{
+	display:inline-block;
+	padding: 3% 0;
+}
+
+.dots{
+	display:inline-block;
+	vertical-align: 50%;
+}
+
+.dots i {
+  padding: 5px;
+}
+
+.fa-cloud, .fa-circle {
+  color: #18bc9c;
+}
+
+div#title p {
+  font-size: 1.172em;
+}
+
+/******************PORTFOLIO********************/
+.site{
+  	/*max-width: 450px;*/
+  	margin: 0 auto 2%;
+  	width:90%;
+}
+
+.site div {
+  padding: 100px 0;
+}
+
+#tinyone{
+	background-color:#fcdb00;
+}
+
+#appz{
+	background-color:#f22079;
+}
+
+#dreamhome{
+	background-color:#282828;
+}
+
+#u4ria{
+	background-color:#000;
+}
+
+#company{
+  background-color:#ff5a00;
+}
+/******************ABOUT********************/
+
+
+#description p{
+	font-size: 1.25em;
+	line-height: 28px;
+  	text-align: left;
+  	padding-bottom: 2%;
+}
+
+.two-col a{
+	text-decoration: underline;
+}
+
+.two-col a:hover{
+	color:#18bc9c;
+}
+
+/******************CONTACT********************/
+input, textarea {
+  width: 100%;
+  padding: 4% 0;
+  border-width: 1px 0;
+  font-size: 1.406em;
+  font-family: 'Lato', sans-serif;
+}
+
+textarea {
+  border-color: #9A9A9A;
+}
+
+input[type="submit"] {
+  width: 93px;
+  display: inline-block;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 2% 0%;
+  color: #fff;
+  background-color: #B538CF;
+  font-size: 1.1875em;
+  margin-top: 3%;
+  float: left;
+}
+
+/*Gets rid of of Chrome's autofill yellow background*/
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+   -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+#form-confirm, .form-error{
+	margin-top: 2%;
+}
+
+#form-confirm .outline, .form-error .outline{
+  background: url(../img/confirm_cloud.png) no-repeat;
+}
+
+#confirm, #fail-submit{
+	display: inline-block;
+} 
+
+.fa-check, #confirm p{
+	color:#18bc9c;
+}
+
+.fa-times, #fail-submit p{
+	color:#cf1925;
+}
+
+.error {
+	color: #cf1925;
+	text-align: left;
+}
+
+/******************FOOTER********************/
+#location, #social-media{
+	margin-bottom:10%;
+}
+
+#location span {
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25em;
+  padding-bottom: 1%;
+}
+
+span#gc-number-0 {
+  font-size: 1.25em;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 1%;
+}
+
+#footer-content h3{
+	font-size:1.625em;
+	font-weight: bold;
+	margin-bottom:5%;
+}
+
+div#social {
+  vertical-align: top;
+}
+
+#social-media ul li {
+  display: inline-block;
+  margin: 0 1%;
+}
+
+.outline {
+  width: 63px;
+  height: 49px;
+  background: url(../img/social_btn.png) no-repeat;
+  display: inline-block;
+}
+
+.outline div {
+  display: inline-block;
+  padding: 18.5px 0;
+}
+
+.outline:hover div i{
+	-webkit-transition: color 0.5s ease;
+	color:#18bc9c;
+}
+
+.outline:hover{
+	-webkit-transition: background 0.5s ease;
+	background: url(../img/social_btn_hover.png) no-repeat;
+}
+
+div#copyright {
+  padding: 3%;
+}
+
+#footer-content{
+	padding-bottom:0;
+}
+
+#top-button{
+	position:fixed;
+	bottom:1%;
+	right:2%;
+}
+
+.fa-arrow-circle-up {
+  color: #18BC9C;
+}
+
+div#confirmation {
+  margin: 15%;
+  text-align: center;
+}
+
+#location a:hover{
+   color:#18bc9c;
+}
+
+/******************MEDIA QUERIES********************/
+@media screen and (max-width: 768px) {
+	#extended-nav{
+		display:none;
+	}
+}
+
+@media screen and (min-width: 769px) {
+	#hamburger-icon{
+		display:none;
+	}
+
+}
+
+@media screen and (min-width: 1000px){
+	form{
+		width: 66%;
+		margin:0 auto;
+	}
+
+	#location, #social{
+		width: 40%;
+		display:inline-block;
+	}
+	
+}
+
+@media screen and (min-width: 1100px){
+	#description{
+		width:90%;
+		margin:0 auto;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	.two-col{
+		display:inline-block;
+		width: 38%;
+  		padding: 0 1.5%;
+	}
+}
+
+

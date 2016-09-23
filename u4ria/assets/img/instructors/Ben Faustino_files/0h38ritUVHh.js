@@ -1,0 +1,6 @@
+/*!CK:3858256060!*//*1378844478,171968564*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["2xA31"]); }
+
+__d("MusicLogger",["AsyncRequest","JSLogger","MusicConstants","Run"],function(a,b,c,d,e,f){var g=b('AsyncRequest'),h=b('JSLogger'),i=b('MusicConstants'),j=b('Run'),k=5000,l=h.create('music_logger'),m=null,n={};function o(){m=null;}function p(){if(!m){l.debug('queue_dispatch',k);m=q.defer(k,false);}}function q(s){l.debug('dispatch',{onUnload:s,messages:n});o();if(Object.keys(n).length>0){var t=JSON.stringify(n);n={};var u=new g().setURI('/ajax/music/log.php').setData({types:t});if(s)u.setOption('asynchronous',false);u.send();}}j.onUnload(q.curry(true));var r={PLATFORM:'platform',STATUS_EVENT_VIA:'status_event',BUMP_KEY:'bump_key',log:function(s,t){if(s===r.STATUS_EVENT_VIA)if(t.op!==i.OP.PLAY&&t.op!==i.STATUS_CHANGE_EVENT.playing&&t.op!==i.STATUS_CHANGE_EVENT.track)return;n[s]=n[s]||[];n[s].push(t);p();},dispatchNow:q};e.exports=a.MusicLogger||r;});
+__d("legacy:Music",["Music"],function(a,b,c,d){a.Music=b('Music');},3);

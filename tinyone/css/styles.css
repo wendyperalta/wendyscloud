@@ -1,0 +1,194 @@
+/**************general*******************/
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family:'PT Sans', sans-serif;
+}
+.full{
+  width:67.857%;
+  margin:0 auto;  /*centralizes it (makes right and left margin the same automatically)*/
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3em;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+span {
+  text-align: left;
+  display: inline-block;
+}
+
+img{
+  max-width:100%;
+}
+
+.two-col{
+  width: 49.3%;
+  display: inline-block;
+  text-align: left;
+
+}
+
+.three-col{
+  width: 32.3%;
+  display: inline-block;
+  text-align: left;
+}
+
+/**************header*******************/
+
+header{
+  background-color:#fcdb00;
+  padding-top:3%;
+}
+
+.header-top {
+  text-align: center;  /*centralizes logo*/
+}
+
+div#ipad{
+  text-align: center;
+}
+
+div#social-media {
+  text-align: right;
+}
+
+#social-media ul li {
+  display: inline-block;
+  padding: 0 2%;
+}
+
+#social-media ul li:last-child {
+padding-right: 0;
+}
+
+.main-header {
+  width: 85.857%;
+  margin: 25% auto 0 auto;
+  text-align: center;
+}
+
+.main-header h1, .feat-description h2 {
+  padding-bottom: 3%;
+}
+
+.main-header p, .feat-description {
+  font-size: 1.25em;
+  padding-bottom: 60px;
+}
+
+.systems{
+  padding-bottom: 10%
+}
+
+.systems img {
+  padding: 0 3%;
+}
+
+/*.dots{
+  padding-bottom: 5%;
+}*/
+
+/**************content*******************/
+
+.features {
+  padding: 10.028% 0;
+  text-align: center;
+}
+
+.feat-description, .keep-in-touch{
+  width:85.857%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.feature-block {
+  padding-bottom: 30%;
+  width:80%;
+}
+
+.feature-block h3{
+  font-size:1.375em;
+  padding-bottom: 3%;
+  text-align: left;
+}
+
+div#block2 {
+  padding-left: 6%;
+}
+
+div#block1, div#block2 {
+  vertical-align: top;
+  padding-top: 5%;
+}
+
+/**************footer*******************/
+
+footer{
+  background-color: #010101;
+  color:#fff;
+  padding-top:3%;
+}
+
+.keep-in-touch p {
+  font-size:1.25em;
+  margin-bottom: 4%;
+}
+
+.keep-in-touch h2 {
+  color: #fcdb00;
+  margin-bottom: 2%;
+}
+
+.form input {
+  float: left;
+}
+
+input[type="email"] {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  width: 69.933%;
+  margin-left: 3%;
+  font-size: 1em;
+  padding: 1% 2%;
+}
+
+button {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  width: 17%;
+  font-size: 1em;
+  margin-right:3%;
+  padding: 1%;
+  background-color:#fcdb00;
+  float:right;
+}
+ 
+.navigation {
+  padding: 10.028% 0;
+}
+
+nav{
+  display:inline-block;
+  padding-right: 10%;
+}
+
+footer nav ul li {
+  padding-bottom: 2%;
+}
+
+footer a{
+  text-decoration: none;
+  color:#fff;
+}

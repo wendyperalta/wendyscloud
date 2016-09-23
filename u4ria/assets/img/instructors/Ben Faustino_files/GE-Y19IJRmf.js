@@ -1,0 +1,5 @@
+/*!CK:4290483526!*//*1379443675,168627757*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["uiIuL"]); }
+
+__d("FacebarTypeaheadGrammarItem.react",["React","FacebarTypeaheadItem.react","FacebarTypeaheadToken.react","FacebarTypeaheadTokenText","cx","fbt"],function(a,b,c,d,e,f){var g=b('React'),h=b('FacebarTypeaheadItem.react'),i=b('FacebarTypeaheadToken.react'),j=b('FacebarTypeaheadTokenText'),k=b('cx'),l=b('fbt'),m={user:"Person"},n=g.createClass({displayName:'FacebarTypeaheadGrammarItem',renderToken:function(){var o=this.props.result.decoration,p=this.props.result.ambiguity,q=p&&p.text,r=(o&&o.entity)||(p&&p.entity);if(q){return (i({text:j.text(q)}));}else if(r)return (i({text:j.textForEntity(r,m),limit:2,leadingMiddot:true}));},render:function(){var o=this.renderToken(),p=o&&!o.props.leadingMiddot;return this.transferPropsTo(h({className:"_207",valign:p,token:o}));}});e.exports=n;});

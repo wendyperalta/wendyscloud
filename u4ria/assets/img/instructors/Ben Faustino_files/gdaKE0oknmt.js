@@ -1,0 +1,5 @@
+/*!CK:3521319792!*//*1379443675,168574511*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["0BuKD"]); }
+
+__d("FacebarTypeaheadWebSuggestionItem.react",["FacebarTypeaheadItem.react","FacebarTypeaheadToken.react","React","cx"],function(a,b,c,d,e,f){var g=b('FacebarTypeaheadItem.react'),h=b('FacebarTypeaheadToken.react'),i=b('React'),j=b('cx'),k={EXACT_MATCH:1,BING:2,BING_POPULAR:3,WEBSUGGESTIONS_AS_KEYWORDS:4},l=i.createClass({displayName:'FacebarTypeaheadWebSuggestionItem',renderToken:function(){if(this.props.result.isLockedWebSearchMode)return;var m=this.props.result.websuggestion_source,n;if(m===k.WEBSUGGESTIONS_AS_KEYWORDS){n='Search';}else if(m===k.BING_POPULAR){n='Popular Web Search';}else n='Web Search';return (h({innerClass:"_57q5",text:[n]}));},render:function(){this.props.result.icon_class="_6-a";return this.transferPropsTo(g({className:"_207",token:this.renderToken()}));}});e.exports=l;});

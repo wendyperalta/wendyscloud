@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="triggerApp">
+	<head>
+		<meta charset="UTF-8">
+    <title>Trigger - Augmented Reality(AR) | Mobile App &amp; Game Development | Digital Agency</title>
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body id="top">
+		<nav>
+      <div id="navigation">
+        <div class="default">
+          <div id="trigger-logo">
+            <a href="#top"><img src="img/logo.png" alt="Trigger Logo"></a>
+          </div>
+          <div id="nav-list">
+            <ul>
+              <li><a href="#work">WORK</a></li> 
+              <li><a href="#services">SERVICES</a></li>
+              <li><a href="#clients">CLIENTS</a></li> 
+              <li><a href="#careers">NEWS</a></li>
+            </ul>
+          </div>
+          <div id="menu">
+            <img src="img/menu.png" alt="Hamburger icon">
+          </div>
+        </div>
+        <div id="dropdown" class="default">
+          <ul>
+            <li><a href="#work">WORK</a></li> 
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#clients">CLIENTS</a></li> 
+            <li><a href="#careers">NEWS</a></li>
+          </ul>
+        </div> 
+      </div>
+    </nav>
+    <header ng-controller="MainController">
+      <div>
+        <ul class="carousel">
+          <li ng-repeat="slide in slides">
+            <div>
+                <img ng-src="{{slide.img}}" alt="{{slide.img_name}}">
+                <div class="carousel-content">
+                  <div class="default">
+                    <div class="title">
+                      <span>{{slide.title}}</span>
+                    </div>
+                    <div id="carousel-description">
+                      <p>{{slide.description}}</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section id="about">
+        <div id="about-content" class="default">
+          <h1>Sed eleifend hendrerit ante, non dignisism.</h1>
+          <p>Phasellus ut pharetra tellus. Sed eleifend hendrerit ante, non mattis mi dignissim quis. Donec vitae arcu pretium diam consectetur rhoncus. Curabitur maximus eros sem, ultrices pretium ante eleifend et. Proin nisl ligula, interdum ac ex quis, consequat finibus massa. Morbi ac lectus lectus.</p>
+        </div>
+      </section>
+      <section id="services">
+        <div id="services-content" class="default">
+          <div>
+            <div class="col-3">
+              <div><span class="fpo">FPO</span></div>
+              <div class="service_icon"><img src="img/hollywood.png" alt="Hollywood Creative"></div>
+              <div><span class="service">HOLLYWOOD CREATIVE</span></div>
+            </div>
+            <div class="col-3">
+              <div><span class="fpo">FPO</span></div>
+              <div class="service_icon"><img src="img/mobile.png" alt="Mobile Innovation"></div>
+              <div><span class="service">MOBILE INNOVATION</span></div>
+            </div>
+            <div class="col-3">
+              <div><span class="fpo">FPO</span></div>
+              <div class="service_icon"><img src="img/future.png" alt="Future Play"></div>
+              <div><span class="service">FUTURE PLAY</span></div>
+            </div>
+          </div>
+          <div id="qualcomm">
+            <span>A <img src="img/qualcomm.png" alt="Qualcomm Logo">Portfolio Company</span>
+          </div>
+          <a href="http://www.triggerglobal.com/" target="_blank" class="button">OUR SERVICES</a>
+          <div id="big-fpo"><span>FPO</span></div>
+        </div>
+      </section>
+      <section id="clients" ng-controller="MainController">
+        <div id="clients-content" class="default">
+          <ul class="client-carousel">
+            <li>
+              <div class="client">
+                <div class="col-2">
+                  <img ng-src="{{client.img}}" alt="{{client.name}}" ng-repeat="client in clients_div1">
+                </div>
+                <div class="col-2">
+                  <img ng-src="{{client.img}}" alt="{{client.name}}" ng-repeat="client in clients_div2">
+                </div> 
+              </div>
+            </li>
+          </ul>
+          <a href="http://www.triggerglobal.com/" target="_blank" class="button">OUR CLIENTS</a>
+        </div>
+      </section>
+      <section id="work" ng-controller="MainController">
+        <div id="work-content" class="default">
+          <div class="col-3" ng-repeat="job in work">
+            <div>
+              <img ng-src="{{job.img}}" alt="{{job.title}}">
+            </div>
+            <div id="product-title">
+              <p>{{job.title}}</p>
+            </div>
+            <div id="product-info">
+              <p>{{job.info}}</p>
+            </div>
+            <div id="product-description">
+              <p>{{job.description}}</p>
+            </div>
+            <a ng-href="{{job.link}}" target="_blank">READ MORE</a>
+          </div>
+        </div>
+      </section>
+      <section id="careers" ng-controller="MainController">
+        <div id ="careers-content" class="default">
+          <h2>Join the Trigger Team</h2>
+          <div id="jobs">
+            <div class="col-3" ng-repeat="career in careers">
+              <div id="job-title">
+                <p>{{career.title}}</p>
+              </div>
+              <div id="job-location">
+                <p>{{career.location}}</p>
+              </div>
+              <div id="job-description">
+                <p>{{career.description}}</p>
+              </div>
+              <a href="http://www.triggerglobal.com/" target="_blank">CONTACT US</a>              
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="footer-content" class="default">
+        <div id="social">
+          <div><a href="mailto:info@triggerglobal.com?Subject=Hello Trigger" target="_top"><img src="img/emailus.png" alt="Email Trigger"></a></div>
+          <div><a href="https://www.facebook.com/triggerglobal" target="_blank"><img src="img/facebook.png" alt="Trigger's Facebook Page"></a></div>
+          <div><a href="https://twitter.com/TriggerLLC" target="_blank"><img src="img/twitter.png" alt="Trigger's Twitter Page"></a></div>
+          <div><a href="https://www.youtube.com/" target="_blank"><img src="img/youtube.png" alt="Trigger's Youtube Page"></a></div>
+        </div>
+        <div id="locations">
+          <div class="location">
+            <div class="fpo-container group"><span class="fpo">FPO</span></div>
+            <div class="location-container">
+              <div><h3>LOS ANGELES</h3></div>
+              <div class="address">
+                <p>2237 Corinth Ave.</p>
+                <p>Los Angeles, CA USA 90064</p>
+                <p>310.921.7070</p>
+              </div>
+            </div>
+          </div>
+          <div class="location">
+            <div class="fpo-container"><span class="fpo">FPO</span></div>
+            <div class="location-container">
+              <div><h3>SHANGAI</h3></div>
+              <div class="address">
+                <p>801 Changle Rd. Room 12B</p>
+                <p>Shanghai, China 200031</p>
+                <p>+86.21.5302.7601</p>
+              </div>   
+            </div>          
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--jQuery library-->
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <!--Angular library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <!--bxSlider-->
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers/MainController.js"></script>
+    <script src="js/jquery.viewportchecker.min.js"></script>
+	</body>
+</html>

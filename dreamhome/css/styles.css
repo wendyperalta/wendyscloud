@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* 
+1.0 RESET
+2.0 BODY
+3.0 HEADER
+4.0 WRAPPER
+5.0 FOOTER
+*/
+
+/******************** 1.0 RESET **********************/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html {
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.clear{clear: both;}
+
+/******************** 2.0 BODY **********************/
+body{
+	background-color: #f3f3f3;
+	font-family: 'Ubuntu', sans-serif;
+}
+h1,h2{font-size: 1.875em;font-weight: bold;color: #333333;letter-spacing: -2px;}
+h3,strong{font-size: 1.08em;font-weight: bold;color:#8f9090;text-transform: uppercase;}
+p{font-size: 0.75em;line-height: 1.67em;color: #7d7d7d;padding-bottom: 14px;}
+.full{width:1170px;margin:0 auto;}
+a{text-decoration: none;}
+
+/******************** 3.0 HEADER **********************/
+
+header {background-color: #282828;padding-bottom: 4px;}
+div#logo {float: left;padding-top: 71px;}
+nav#main-nav {float: right;}
+header ul li {display: inline-block;margin-left: -4px;}
+header ul li a{font-size: 0.875em;display: block;padding: 52px 28px 72px;color: #797979;font-weight: bold;transition: background-color 0.5s ease;}
+header ul li a.active, header ul li a:hover {color: #fff;background-color: #ea4f5f;transition: background-color 0.5s ease;}
+button {font-size: 13px;padding: 16px 22px;color: #fff;background-color: #ea4f5f;border-radius: 4px;border: none;}
+
+/******************** 4.0 WRAPPER **********************/
+
+#wrapper {padding-top: 76px;}
+#wrapper h1 {padding-bottom: 28px;}
+div#breadcrumbs {font-weight: bold;font-size: 0.8125em;color: #8f9090;padding-bottom: 72px;}
+#breadcrumbs span.parent {font-size: 1.07em;color: #333333;}
+.two-thirds{width: 57.26495726495726%;}
+.one-third{width:31.62393162393162%;}
+div#profile {float: left;}
+div#awards {float: right;}
+#awards a {color: #ea4f5f;}
+#awards a:hover{color: #535353;text-decoration:underline;transition:all 0.3s ease 0s;}
+#wrapper #profile img {border: solid 3px #ffffff;-webkit-box-shadow: 0px 0px 1px 1px rgba(218,218,218,1);-moz-box-shadow: 0px 0px 1px 1px rgba(218,218,218,1);box-shadow: 0px 0px 1px 1px rgba(218,218,218,1);float: left;margin-right: 20px;}
+#wrapper hr {margin: 30px 0;border: none;height: 1px;background-color: #d6d6d6;}
+.member img, #categorie-one img, #categorie-two img, #categorie-three img, .grid-4 img, #team img, #video img{border: solid 3px #ffffff;-webkit-box-shadow: 0px 0px 1px 1px rgba(218,218,218,1);-moz-box-shadow: 0px 0px 1px 1px rgba(218,218,218,1);box-shadow: 0px 0px 1px 1px rgba(218,218,218,1);}
+.member{float:left;width:163px;margin-right:38.4px;}
+.member:last-child{margin-right:0;}
+.member h3 {padding: 20px 0 10px;font-size: 13px;}
+.member p {padding-bottom: 84px;}
+div#facts {margin-bottom: 50px;}
+.fact {width: 33.3%;float:left;padding-right:34px;}
+#facts div:last-child {padding-right: 0;}
+#facts a, #categorie-one a, .grid-3 a, .grid-4 a, #team-info a, #click-here a {font-size: 13px;display:block;padding:16px 22px;color: #fff;background-color: #ea4f5f;border-radius: 4px;} /*FOR OPTIMIZATION: Give all these links a single class*/
+#facts a:hover, #categorie-one a:hover, .grid-3 a:hover, .grid-4 a:hover, #team-info a:hover, #click-here a:hover{background-color:#797979;}
+
+
+/*******SERVICES PAGE*******/
+#interior-one ul li, #interior-two ul li {text-transform: uppercase; color:#ea4f5f; font-size: 10px; line-height: 23px;}
+#interior-one ul li a, #interior-two ul li a{color:#ea4f5f;}
+#interior-one ul li a:hover, #interior-two ul li a:hover{color:#535353;transition: all 0.3s ease 0s;}
+#interior-one ul li:before, #interior-two ul li:before {content:"\003e  "; color: #242424;}
+div#interior-one {width: 50%;float: left;margin-right: 25px;}
+div#interior {margin-bottom: 60px;}
+.grid-3 {width: 33.3%;float: left;padding: 0 20px 48px 0;}
+#services h2 {line-height: 20px;}
+.grid-3:nth-child(3), .grid-3:nth-child(6){padding-right: 0;}
+
+/*******PROJECTS PAGE*******/
+.grid-2 {width: 50%;float: left;margin-right: 23px;}
+#categories {text-align: right;margin-bottom: 47px;}
+#categories ul li {display: inline-block;padding-right: 23px;font-size: 12px;}
+#categories ul li:last-child {padding-right: 0;}
+#categories ul li a {color: #7d7d7d;}
+#categories ul li.active a {color: #ea4f5f}
+#categorie-one img, #categorie-two img, #categorie-three img {margin-bottom: 29px;}
+#categorie-one, #categorie-two{margin-bottom: 29px;}
+#categorie-three {margin-bottom: 43px;}
+.grid-4 {width: 25%;float: left;}
+
+/*******HOME PAGE*******/
+#slider-section{background-image:url('http://subtlepatterns.com/patterns/debut_dark.png');background-repeat:repeat;padding: 25px 0 23px 0;}
+.whats-new {width:212px;background-color: #474747;font-weight: bold;font-size: 36px;margin: 0 0 1px 0;text-align:center;padding: 49px 42px 32px 42px;}
+.whats-new p {color: #fff;padding-bottom: 0;line-height: 36px;}
+.whats-new:hover{background-color:#707070;}
+#arrow {padding-top: 23px;}
+.slider {display:inline-block; width:956px; height:425px;  background: url(../slider-copy.jpg) no-repeat;}
+#slider-container {text-align: center;}
+#slider-menu {display:inline-block;	width:13%;vertical-align: top;}
+#slider-info {width: 420px;text-align: left;  margin: 10% 0 0 7%;}
+#slider-info strong {font-size: 50px;color: #333333;}
+#slider-info span {color: #5c5c5c;font-size: 38px;line-height: 30px;}
+#slider-info p {padding: 15px 0;text-transform: uppercase;font-size: 10px;}
+#click-here a {margin-top: 13px;}
+#slider-info ul li {display: inline-block;margin: 0 1px;}
+#slider-info ul {margin-top: 39px;}
+#innovations-menu {background-color: #e04756;border-top: 10px solid #de6571;}
+.innovation {display:inline-block;width: 33%;padding: 2% 3%;}
+.innovation h3, .innovation p {color: #fff;}
+.innovation h3 {font-size: 24px;}
+.innovation a {color: #f9989b;font-weight: bold;font-size: 12px;}
+.innovation a:hover {color:#fff;}
+.innovation p {padding-bottom: 8px;}
+.inn-pic{display:inline-block;}
+.inn-info {display:inline-block;}
+#project strong {text-transform: inherit;font-size: 24px;}
+#project img {margin-bottom: 32px;}
+#latest-projects {margin-bottom: 48px;}
+#welcome h1 {color: #ea4f5f;font-size: 48px;}
+#offer p {font-size: 30px;line-height: 18px;}
+#welcome p:nth-child(3) {font-size: 14px;color: #b8b7b7;}
+#team img{float:left;}
+#team-info {float: right;margin: 0 0 0 22px;} /*resets margin-right to 0 from grid-2 class*/
+#team-info p {padding: 0; line-height: 20px;}
+#team-info div {margin-bottom: 10px;}
+#team-info a {margin-top: 10px;}
+#video {width: 40%;float: right;}
+#recent-clients p {font-size: 24px;padding-bottom: 0;line-height: 22px;color: #333333;}
+#recent-clients {margin-bottom: 32px;}
+#our-clients {float: left;width: 12.64957264%;}
+#client-list {float: right;width: 86.53042735%;padding-left: 70px;}
+.client {display: inline-block;float: left;width: 20%;}
+
+
+
+
+
+/******************** 4.0 FOOTER **********************/
+
+footer {background-color: #282828;}
+footer nav {padding-top: 47px;float: left;padding-right: 111px;}
+div#contact {padding:47px 76px 0 0;; float:right;}
+footer nav h3 {padding-bottom: 36px; color: #fff;font-size: 18px;}
+footer nav ul li a {color: #797979;}
+footer nav ul li a:hover{color:#e44a59;transition: all 0.3s ease 0s;}
+footer nav ul li a:before{content:"\003e   ";  /* inserts " > " in front of li*/}
+footer nav ul li {font-size: 10px;padding-bottom: 24px;font-family: 'Arial', sans-serif;font-weight: bold;}
+#info p {padding-bottom: 23px;}
+#info span {font-family: 'Arial', sans-serif;}
+div#footer-logo {padding: 6px 0 27px 0;}
+#footer-logo span {color: #fff;font-size: 11px;font-family: 'Arimo', sans-serif;}
+#footer-logo span a {color: #eb6573;}
+#social a {padding-right: 4px;}
+.active-footer{color:#ea4f5f;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
