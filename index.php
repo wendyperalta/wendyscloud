@@ -220,7 +220,7 @@
         </div>
       </div>
       <div id="copyright">
-        <span>Copyright &copy; wendyscloud.com 2016</span>
+        <span>Copyright &copy; wendyscloud.com <script>document.write(new Date().getFullYear())</script></span>
       </div>
     </div>
   </footer>

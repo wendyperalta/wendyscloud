@@ -3,6 +3,12 @@ app.controller("MainController", ['$scope', '$sce', function($scope,$sce)
   $scope.sites=
   [
     {
+      name:'wendyogi',
+      img:'img/wendyogi-light.png',
+      description:'Wendyogi Website',
+      link:'http://wendyogi.com'
+    },
+    {
       name:'company',
       img:'img/company_logo.png',
       description:'Company Website',
